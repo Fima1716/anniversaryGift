@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Год</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+
+  <body>
+    <div class="countdown">
+      <p>Нашим отношениям</p>
+      <div class="time" id="days">00</div>
+      <div class="label">Дней</div>
+      <div class="time" id="hours">00</div>
+      <div class="label">Часов</div>
+      <div class="time" id="minutes">00</div>
+      <div class="label">Минут</div>
+      <div class="time" id="seconds">00</div>
+      <div class="label">Секунд</div>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          Привет! Сегодня я подготовил для тебя небольшой сюрприз - подборку
+          фотографий с нашими с тобой совместными моментами и тёплыми
+          воспоминаниями
+        </div>
+        <div class="swiper-slide"><img src="./img/1.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="./img/2.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="./img/3.jpg" alt="" /></div>
+      </div>
+    </div>
+    <div class="text">
+      <h2>❤️</h2>
+      <b>Дорогая Саша</b>, сегодня особенный день – день, когда мы отмечаем нашу
+      первую круглую дату вместе. Сколько же волшебных моментов мы пережили за
+      это время, и как много важных вещей мы узнали друг о друге. Когда я
+      вспоминаю, как мы встретились впервые, мне кажется, что это было только
+      вчера. Но за этот год нашей истории мы прошли через множество, смеха,
+      радости, поддержки и, конечно же, любви. Ты стала моей опорой, моим
+      вдохновением, моей лучшей подругой и той, кто делает мою жизнь яркой и
+      значимой. Но важнее всего, что я ценю в наших отношениях, это то, как мы
+      растем вместе. Мы поддерживаем друг друга, делимся мечтами, идем вперед,
+      рука об руку. Ты – моя радость и моя надежда. С тобой я чувствую, что могу
+      преодолеть любые трудности и покорить мир. Ты делаешь меня сильнее, лучше,
+      теплее. Благодаря тебе мне хочется двигаться вперёд. Смотря на нас
+      сегодня, я благодарен судьбе за то, что ты есть рядом. Наши сердца бьются
+      в унисон, и я не могу дождаться всех приключений и счастливых моментов,
+      которые еще ждут нас впереди. Спасибо тебе за этот невероятный год. Давай
+      сделаем этот день особенным и запоминающимся, как и каждый день,
+      проведенный друг с другом.
+    </div>
+    <script src="./js/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+      });
+    </script>
+  </body>
+</html>
