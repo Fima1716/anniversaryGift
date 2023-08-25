@@ -21,8 +21,9 @@ body {
 }
 
 .swiper {
-  width: 1000px;
-  height: 800px;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px;
 }
 
 .swiper-slide {
@@ -30,11 +31,14 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 18px;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
   color: #fff;
 }
+
 img {
+  max-width: 100%;
+  height: auto;
   border-radius: 15px;
 }
 .swiper-slide:first-child {
@@ -50,13 +54,12 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 15px;
+  margin: auto 10%;
   background-color: white;
   border-radius: 10px;
 }
 .relations {
-  padding-left: 10px;
+  font-size: 20px;
 }
 .time {
   font-size: 40px;
@@ -74,9 +77,9 @@ img {
 }
 
 .label {
-  font-size: 24px;
+  font-size: 18px;
   color: #3cc8ff;
-  margin: 0 10px;
+  margin: 5px;
 }
 
 .text {
@@ -175,13 +178,13 @@ img {
 
 .heart-button {
   background-color: transparent;
-  border-right: 1px solid #000;
+  border: 1px solid #da9db1;
   color: #da9db1;
-  font-size: 36px;
-  cursor: pointer;
-  padding: 0;
-  margin: 20px 0 50px 0;
+  font-size: 18px;
+  padding: 10px 20px;
   border-radius: 15px;
+  margin: 20px;
+  cursor: pointer;
 }
 
 .heart-button:hover {
