@@ -1,7 +1,7 @@
 let heartCount = 0;
 
 function createHeart() {
-    if (heartCount < 20) {
+    if (heartCount < 40) {
         const heart = document.createElement('div');
         heart.className = 'heart';
         const xPos = Math.random() * (window.innerWidth - 50);
@@ -16,10 +16,10 @@ function createHeart() {
                 heart.remove();
                 heartCount--;
             }, 500);
-        }, 2000);
+        }, 500);
 
         heartCount++;
     }
 }
 
-setInterval(createHeart, 1000);
+setInterval(createHeart, 500);

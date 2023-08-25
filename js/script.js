@@ -8,10 +8,25 @@ function updateCountdown() {
     const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-    document.getElementById("days").textContent = days.toString().padStart(2, "0");
-    document.getElementById("hours").textContent = hours.toString().padStart(2, "0");
-    document.getElementById("minutes").textContent = minutes.toString().padStart(2, "0");
-    document.getElementById("seconds").textContent = seconds.toString().padStart(2, "0");
+    const daysElement = document.getElementById("days");
+    const hoursElement = document.getElementById("hours");
+    const minutesElement = document.getElementById("minutes");
+    const secondsElement = document.getElementById("seconds");
+
+    updateElementWithAnimation(daysElement, days);
+    updateElementWithAnimation(hoursElement, hours);
+    updateElementWithAnimation(minutesElement, minutes);
+    updateElementWithAnimation(secondsElement, seconds);
+}
+
+function updateElementWithAnimation(element, newValue) {
+    if (element.textContent !== newValue) {
+        element.classList.add("blink");
+        setTimeout(() => {
+            element.textContent = newValue.toString().padStart(2, "0");
+            element.classList.remove("blink");
+        }, 300);
+    }
 }
 
 updateCountdown();
