@@ -20,6 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .swiper {
@@ -37,6 +38,15 @@ body {
   font-weight: bold;
   color: #8785a2;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
 
 img {
   max-width: 100%;
@@ -47,7 +57,7 @@ img {
   background-color: rgb(255, 255, 255);
   opacity: 90%;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -57,8 +67,8 @@ img {
   justify-content: space-around;
   align-items: center;
   margin: auto 10%;
-  background-color: #f6f6f6;
   border-radius: 15px;
+  width: 15%;
 }
 .relations {
   font-size: 20px;
@@ -70,24 +80,24 @@ img {
   color: #8785a2;
   padding-right: 10px;
   border-radius: 15px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.1);
   transition: opacity 0.3s ease-in-out;
   padding: 0 20px 0 20px;
   margin: 15px;
 }
 @media (max-width: 829px) {
   .countdown {
+    display: flex;
     flex-direction: column;
-    padding: 20px;
-    margin: 20px;
-    margin-top: 40vh;
+    margin-top: 30%;
+    width: 20%;
   }
   .time {
     font-size: 1.5em;
     font-weight: bold;
     color: #8785a2;
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 6px rgba(250, 0, 0, 0.1);
     transition: opacity 0.3s ease-in-out;
     margin: 20px;
   }
@@ -106,8 +116,6 @@ img {
   .label {
     font-size: 1em;
     color: #8785a2;
-    margin: 5px;
-    padding-right: 10px;
     text-align: center;
   }
   .swiper-slide:first-child {
@@ -117,6 +125,10 @@ img {
     font-size: 15px;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  .swiper {
+    width: 80%;
   }
 }
 .time.blink {
